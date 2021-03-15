@@ -1,14 +1,16 @@
 const modal = document.querySelector('.modal');
-const preview = document.querySelectorAll('.gallery');
-const mainImage = document.querySelector('.main-img');
-const imageText = document.querySelector('.caption');
+const smallImages = document.querySelectorAll('.gallery img');
+const mainImage = document.querySelector('.large-img');
+const caption = document.querySelector('.caption');
 
-preview.forEach(preview => {
+smallImages.forEach((preview) => {
    preview.addEventListener('click', () => {
        modal.classList.add('open');
-       original.classList.add('open')
-       const originalSource = preview.getAttribute('data-original')
-        original.src = `./lg_images/${originalSource}`
+       mainImage.classList.add('open')
+       const originalSrc = preview.getAttribute('data-original')
+       mainImage.src = `./lg_images/${originalSrc}`
+       const altText = preview.alt
+       caption.textContent = altText;
    }) 
 })
 

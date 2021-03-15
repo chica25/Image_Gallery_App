@@ -14,7 +14,6 @@
 .img-container {
     overflow: hidden;
 }
-
 .img-container img {
   width: 100%;
   height: 100%;
@@ -27,7 +26,7 @@
 } 
 
  .modal {
- background: rgba(0,0,0.8);
+ background: rgba(0, 0, 0.8);
  position: fixed;
  top: 0;
  left: 0;
@@ -41,20 +40,19 @@
    opacity: 1;
    pointer-events: all;
 } 
- .main-image {
+ .large-img {
     position: absolute;
     height: 70%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -5%) scale(1);
+    transform: translate(-50%, -50%) scale(0.5);
     transition: all 0.25s ease-out;
 }
 
-.main-image.open {
-    transform: translate(-50%, -5%) scale(1);
+.large-img.open {
+    transform: translate(-50%, -50%) scale(1);
 
 } 
-
 
  .modal p {
     color: white;
