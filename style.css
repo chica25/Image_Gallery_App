@@ -35,12 +35,13 @@
  height: 100%;
  opacity: 0;
  pointer-events: none;
+ transition: 0.25s ease-out;
 }
 .modal.open {
    opacity: 1;
    pointer-events: all;
 } 
- .large-image {
+ .main-image {
     position: absolute;
     height: 70%;
     top: 50%;
@@ -49,7 +50,7 @@
     transition: all 0.25s ease-out;
 }
 
-.large-image.open {
+.main-image.open {
     transform: translate(-50%, -5%) scale(1);
 
 } 
